@@ -2,3 +2,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    font-family: 'Fraunces', serif;
+}
+
+.container{
+    position:absolute;
+    margin: 20px;
+    width:auto;
+}
+.container h1{
+    text-align: left;
+}
+img{
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.container #heading{
+    text-align:center;
+    font-family: 'Fraunces', serif;
+}
+
+.topnav a{
+    text-align: end;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:x-small;
+}
