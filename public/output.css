@@ -1,6 +1,4 @@
-/* ./your-css-folder/styles.css */
-
-/* ! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -32245,6 +32243,37 @@ video {
 
 .content-none {
   content: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800&family=Roboto:wght@500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700;800;900&display=swap');
+
+:root{
+  --Barlow : 'Barlow, sans-serif';
+  --Fraunces :"Fraunces, serif";
+}
+
+body {
+  font-family: var(--Barlow);
+}
+
+.creatives h1{
+  font-family: var(--Fraunces);
+}
+
+.section-1 {
+  background-image: url("../images/desktop/image-header.jpg");
+}
+
+@media (max-width: 968px) {
+  .orange {
+    background-size: auto;
+  }
+
+  /* .arrow {
+        width: 95%;
+    } */
 }
 
 @media (min-width: 640px) {

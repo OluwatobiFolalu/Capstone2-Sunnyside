@@ -7,21 +7,63 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
+  <link rel="stylesheet" href="./public/output.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
-  About
+<div class=" 
+      orange
+      container-sm
+      section-1
+      md:section-1 h-screen 
+      bg-no-repeat bg-cover
+      bg-center py-16 px-12 text-lg">
+  <div class="navbar flex items-center"> 
+    <div class=" logo flex-initial">
+      <img src="./images/logo.svg" alt="logo" class=" h-10 ml-0.5">
+    </div>
+    <nav class="flex-initial text-gray-50 ml-auto">
+      <ul class="hidden md:flex gap-8 lg:gap-16 items-center">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><button
+             class=" 
+                btn rounded-full
+                py-3 px-6 bg-gray-50 
+                text-black hover:bg-blue-300 
+                hover:text-gray-50 
+                font-semibold font-serif	">
+                CONTACT</button></li>
+      </ul>
+    </nav>
+    <div class="cursor-pointer md:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="white">
+      <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+    </svg>
+  </div>
+  </div>
+  <div class="
+        creatives
+        text-center	
+        text-gray-50 
+        font-black
+        text-5xl mt-28	">
+        <h1> WE ARE CREATIVES</h1>
+  </div>
+    <img class="arrow mt-32 mx-auto object-none object-center" src="./images/icon-arrow-down.svg" alt="arrow">
+
+</div>
+  <!-- About
   Services
   Projects
   Contact
 
   We are creatives
-
   Transform your brand
 
   We are a full-service creative agency specializing in helping brands grow fast. 
@@ -58,11 +100,14 @@
   About
   Services
   Projects
-  Contact
+  Contact -->
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Your Name Here</a>. -->
+    <!-- <div class="container">
+      <h1 class="text-red-300">Sunnyside</h1>
+    </div>
+  </div>  -->
 </body>
 </html>
