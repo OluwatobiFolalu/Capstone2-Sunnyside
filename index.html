@@ -13,21 +13,26 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700&family=Fraunces:wght@500;600;700;800;900&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class=" 
+      relative
       orange
       container-sm
-      section-1
-      md:section-1 h-screen 
+      section-1 h-screen
+      md:section-1
       bg-no-repeat bg-cover
-      bg-center py-16 px-12 text-lg">
+      bg-center py-8 px-8 md:py-16 md:px-12  text-lg">
   <div class="navbar flex items-center"> 
     <div class=" logo flex-initial">
       <img src="./images/logo.svg" alt="logo" class=" h-10 ml-0.5">
     </div>
     <nav class="flex-initial text-gray-50 ml-auto">
-      <ul class="hidden md:flex gap-8 lg:gap-16 items-center">
+      <ul class="hidden md:flex gap-8 lg:gap-16 items-center balow">
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Projects</a></li>
@@ -37,33 +42,45 @@
                 py-3 px-6 bg-gray-50 
                 text-black hover:bg-blue-300 
                 hover:text-gray-50 
-                font-semibold font-serif	">
+                font-semibold">
                 CONTACT</button></li>
       </ul>
     </nav>
-    <div class="cursor-pointer md:hidden">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="white">
+    <div class="cursor-pointer md:hidden ">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="white" id="menubar">
       <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
     </svg>
   </div>
   </div>
   <div class="
         creatives
+        leading-loose tracking-widest
         text-center	
-        text-gray-50 
-        font-black
-        text-5xl mt-28	">
+        text-gray-200 
+        font-extrabold
+        mt-28	
+        mb-7">
         <h1> WE ARE CREATIVES</h1>
   </div>
-    <img class="arrow mt-32 mx-auto object-none object-center" src="./images/icon-arrow-down.svg" alt="arrow">
-
+    <div class="arrowContainer">
+      <img class="arrow mt-32 mx-auto object-none object-center absolute" src="./images/icon-arrow-down.svg" alt="arrow">
+    </div>
+    <div class=" inline-block bg-white absolute menu" id="menu">
+      <div class=" absolute triangle"></div>
+      <Ul class="text-center font-bold text-gray-400 px-24 py-8 balow">
+        <li class="mx-6 font-bold"><a href="#">About</a></li>
+        <li class="m-6 font-bold"><a href="#">Services</a></li>
+        <li class="m-6 font-bold"><a href="#">Projects</a></li>
+        <li><button class=" 
+          btn rounded-full
+          py-3 px-6 bg-yellow-300 
+          text-black
+          ">
+          CONTACT </button></li>
+      </Ul>
+    </div>
 </div>
-  <!-- About
-  Services
-  Projects
-  Contact
-
-  We are creatives
+<div class="main">
   Transform your brand
 
   We are a full-service creative agency specializing in helping brands grow fast. 
@@ -101,13 +118,16 @@
   Services
   Projects
   Contact -->
+</div>
+<script>
+  const button = document.querySelector('#menubar'); // Hamburger Icon
+const menu = document.querySelector('#menu'); // Menu
 
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>. -->
-    <!-- <div class="container">
-      <h1 class="text-red-300">Sunnyside</h1>
-    </div>
-  </div>  -->
+button.addEventListener('click', () => {
+menu.classList.toggle('hide');
+console.log("toggled")
+})
+</script>
+
 </body>
 </html>
