@@ -10,3 +10,48 @@
 .fontFraunces {
     font-family: 'Fraunces', serif;
 }
+
+:root{
+    --Barlow : "Barlow", sans-serif;
+    --Fraunces :"Fraunces", serif;
+}
+body {
+    font-family: var(--Barlow);
+}
+.creatives h1{
+    font-family: var(--Fraunces);
+    font-size: clamp(calc(1rem + 1vw), calc(2rem + 2vw), 4rem);
+    line-height: 1.3;
+}
+.section-1 {
+    background-image: url("../images/desktop/image-header.jpg");
+    background-color: #3dbeff;
+}
+.arrowContainer .arrow {
+    bottom: 42%;
+    /* left: calc(50% - 32px); */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn{
+    font-family: var(--Fraunces);
+}
+.menu {
+    display: none;
+    right: 2em;
+    top: 7em;
+
+}
+
+.hide {
+    display: inline-block;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border: 1em solid;
+    border-color: transparent white white transparent;
+    top: -2em;
+    right: 0;    
+}
