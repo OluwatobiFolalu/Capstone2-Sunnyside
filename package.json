@@ -1,7 +1,7 @@
 {
   "name": "capstone2",
   "version": "1.0.0",
-  "description": "",
+  "description": "![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
     "start": "tailwindcss -i src/style.css -o public/output.css -w"
@@ -11,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "tailwindcss": "^2.2.19"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OluwatobiFolalu/Capstone2-Sunnyside.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OluwatobiFolalu/Capstone2-Sunnyside/issues"
+  },
+  "homepage": "https://github.com/OluwatobiFolalu/Capstone2-Sunnyside#readme"
 }

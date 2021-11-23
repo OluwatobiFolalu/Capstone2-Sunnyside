@@ -11,6 +11,8 @@ Document
 Use a better box model (opinionated).
 */
 
+
+
 *,
 ::before,
 ::after {
@@ -580,6 +582,12 @@ object {
  *
  * https://github.com/mozdevs/cssremedy/issues/14
  */
+
+
+.cyancolor{
+  background-color: hsl(168, 34%, 41%);
+  color: hsl(167, 40%, 24%);
+}
 
 img,
 video {
