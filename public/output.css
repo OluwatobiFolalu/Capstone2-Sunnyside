@@ -32263,6 +32263,13 @@ video {
 
 body {
   font-family: var(--Barlow);
+  background-color: #eee;
+}
+
+.page{
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 .creatives h1{
@@ -32373,20 +32380,12 @@ body {
 }
 
 .fruit > *  + * {
-  top: 60%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .mark{
   font-family: var(--Fraunces);
-}
-
-.learn{
-  width: 0;
-  height: 0;
-  border: 1em solid;
-  border-color: transparent transparent yellow transparent;
 }
 
 @media (min-width: 640px) {
