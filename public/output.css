@@ -11,8 +11,6 @@ Document
 Use a better box model (opinionated).
 */
 
-
-
 *,
 ::before,
 ::after {
@@ -582,12 +580,6 @@ object {
  *
  * https://github.com/mozdevs/cssremedy/issues/14
  */
-
-
-.cyancolor{
-  background-color: hsl(168, 34%, 41%);
-  color: hsl(167, 40%, 24%);
-}
 
 img,
 video {
@@ -17798,6 +17790,14 @@ video {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
+.bg-graphic {
+  background-image: url('/img/hero-pattern.svg');
+}
+
+.bg-photo {
+  background-image: url('images/desktop/image-photography.jpg');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -32306,6 +32306,10 @@ body {
   right: 0;
 }
 
+.main{
+  font-family: var(--Barlow);
+}
+
 @media (max-width: 800px) and (min-height: 1024px) {
   .section-1 {
     height: 700px;
@@ -32366,6 +32370,23 @@ body {
   .arrowContainer .arrow {
     bottom: 25%;
   }
+}
+
+.fruit > *  + * {
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mark{
+  font-family: var(--Fraunces);
+}
+
+.learn{
+  width: 0;
+  height: 0;
+  border: 1em solid;
+  border-color: transparent transparent yellow transparent;
 }
 
 @media (min-width: 640px) {
@@ -49491,6 +49512,14 @@ body {
 
   .sm\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .sm\:bg-graphic {
+    background-image: url('/img/hero-pattern.svg');
+  }
+
+  .sm\:bg-photo {
+    background-image: url('images/desktop/image-photography.jpg');
   }
 
   .sm\:from-transparent {
@@ -80721,6 +80750,14 @@ body {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .md\:bg-graphic {
+    background-image: url('/img/hero-pattern.svg');
+  }
+
+  .md\:bg-photo {
+    background-image: url('images/desktop/image-photography.jpg');
+  }
+
   .md\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -111947,6 +111984,14 @@ body {
 
   .lg\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .lg\:bg-graphic {
+    background-image: url('/img/hero-pattern.svg');
+  }
+
+  .lg\:bg-photo {
+    background-image: url('images/desktop/image-photography.jpg');
   }
 
   .lg\:from-transparent {
@@ -143177,6 +143222,14 @@ body {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-graphic {
+    background-image: url('/img/hero-pattern.svg');
+  }
+
+  .xl\:bg-photo {
+    background-image: url('images/desktop/image-photography.jpg');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -174403,6 +174456,14 @@ body {
 
   .\32xl\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:bg-graphic {
+    background-image: url('/img/hero-pattern.svg');
+  }
+
+  .\32xl\:bg-photo {
+    background-image: url('images/desktop/image-photography.jpg');
   }
 
   .\32xl\:from-transparent {
