@@ -30,7 +30,6 @@ body {
 }
 .arrowContainer .arrow {
     bottom: 42%;
-    /* left: calc(50% - 32px); */
     left: 50%;
     transform: translateX(-50%);
 }
